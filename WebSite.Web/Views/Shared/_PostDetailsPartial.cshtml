@@ -1,0 +1,31 @@
+﻿@model WebSite.Core.Entities.PostEntity
+@using WebSite.DataAcces.Identity
+@using WebSite.Data.Extensions
+    <div>
+        <div class="mb-4">
+            <a class="btn btn-link font-weight-bolder" style="text-decoration:none; font-size: 25px" asp-controller="Post" asp-action="Details" asp-route-id="@Model.Id">@Model.Title</a>
+        </div>
+
+        <div class="mb-4">
+            <a style="color: gray; margin-left: 6px; font-size: 13px" asp-controller="Account" asp-action="Profile" asp-route-id="@Model.AuthorEntity.Name">Posted by @Model.AuthorEntity.Name</a>
+            <h2 style="color: gray; margin-left: 6px; font-size: 13px">Postdate: @Model.Created.ToString("dd.MM.yyyy")</h2>
+
+            @if (!string.IsNullOrWhiteSpace(Model.Link))
+            {
+                @if (Model.Link.Length > 30)
+                {
+                    <a class="btn btn-link" style="margin-left: 10px; margin-top: 1px; font-size: 11px;" href="@Model.Link">@Model.Link.Substring(0, 30)...</a>
+                }
+                else
+                {
+                    <a class="btn btn-link" style="margin-left: 10px; margin-top: 1px; font-size: 11px;" href="@Model.Link">@Model.Link</a>
+                }
+            }
+        </div>
+        <div class="card mb-4">
+            <h5 class="card-header">Text:</h5>
+            <div class="card-body">
+                <p class="card-text">@Html.Raw(Model.RenderContent())</p>
+            </div>
+        </div>
+    </div>

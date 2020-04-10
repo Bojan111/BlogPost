@@ -1,0 +1,29 @@
+﻿@model WebSite.Web.ViewModels.SearchViewModel
+
+@{
+}
+
+<div class="container">
+    <h1>@Model.Posts.Count() Posts found</h1>
+
+    @foreach (var post in Model.Posts)
+    {
+        await Html.RenderPartialAsync("_PostPartial", post);
+    }
+
+    @foreach (var user in Model.Users)
+    {
+        <div>
+            <div>
+                <a asp-controller="Account" asp-action="Profile" asp-route-id="@user.Name">
+                </a>
+                <img src="data:image;base64,@System.Convert.ToBase64String(user.Image)" />
+
+                <a  asp-controller="Account" asp-action="Profile" asp-route-id="@user.Name">
+                    <h1><strong>@user.Name</strong></h1>
+                </a>
+            </div>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,64 @@
+﻿@model WebSite.Web.ViewModels.SearchViewModel
+@using WebSite.Core.Entities
+@using WebSite.Data.Extensions
+
+@inject WebSite.Core.Interfaces.IAsyncRepository<AuthorEntity> AuthorEntityRepository;
+
+@{
+    var TopToday = Model.Posts.OrderByDescending(x => x.Views).Take(3).Where(x => x.Created.Date == DateTime.Today);
+
+    AuthorEntity currentUser = null;
+    if (User.Identity.IsAuthenticated)
+    {
+        currentUser = await AuthorEntityRepository.GetById(User.Identity.GetAuthorId());
+    }
+}
+
+    <div style="margin-bottom: 30px">
+     
+
+        <div class="container-fluid" style="background-image:url(../images/Screen-Shot-2018-03-15-at-9.02.14-AM.png); background-attachment: fixed;background-position: center center;    background-size: cover;    background-repeat: no-repeat; height: 200px">
+            <h1 class="font-weight-bolder text-center text-dark" style="font-size:44px; padding: 20px 10px 20px 10px;">Top 5 Blogs</h1>
+            <div style="text-align: center;">
+                @foreach (var blog in Model.Blogs.OrderByDescending(x => x.Posts.Count).Take(5))
+                {
+                    <a class="btn btn-dark font-weight-bolder text-center" style="width: 30%" asp-controller="Blog" asp-action="View" asp-route-id="@blog.Id">@blog.Posts.Count Posts</a>
+                }
+            </div>
+
+            @*@if (User.Identity.IsAuthenticated)
+            {
+                <div>
+                    <img style="width: 20%" src="data:image;base64,@System.Convert.ToBase64String(currentUser.Image)" />
+                    <h2 class="font-weight-bolder text-center"><strong>@currentUser.Name</strong></h2>
+
+                    <p class="badge badge-dark" style="padding: 8px">Posts: @currentUser.Posts.Count()</p>
+                    <p class="badge badge-dark" style="padding: 8px">Comments: @currentUser.Comments.Count()</p>
+                </div>
+            }*@
+        </div>
+
+    </div>
+        <div>
+            @if (!Model.Posts.Any())
+            {
+                <div class="container" >
+                    <h1>No Posts found!</h1>
+                </div>
+            }
+            else
+            {
+                @foreach (var post in Model.Posts.Take(20))
+                {
+                    await Html.RenderPartialAsync("_PostPartial", post);
+                }
+            }
+        </div>
+
+
+
+
+
+
+
+

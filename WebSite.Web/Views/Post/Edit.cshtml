@@ -1,0 +1,46 @@
+﻿@model WebSite.Web.ViewModels.PostViewModel
+
+@{
+}
+
+    <div class="text-center container">
+
+               <form asp-controller="Post" asp-action="Edit" method="post" enctype="multipart/form-data">
+                    <div class="container ">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label>Cover</label>
+                                <label for="imageInput">
+                                    <img id="imageDisplay" src="data:image;base64,@System.Convert.ToBase64String(Model.Cover)" alt="COVER" height="200" width="200" />
+                                    <input id="imageInput" type="file" name="formFile" />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label asp-for="Title"></label>
+                                <input asp-for="Title" value="@Model.Title" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label asp-for="Link"></label>
+                            <input asp-for="Link" value="@Model.Link">
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <div class="form-group">
+                            <label asp-for="Text">Text</label>
+                            <textarea asp-for="Text">@Model.Text</textarea>
+                        </div>
+                        <div class="text-center">
+                            <input class="btn btn-success" type="submit" value="Save" />
+                        </div>
+                        <div class="errors" asp-validation-summary="All"></div>
+                    </div>
+                </form>
+            </div>
+

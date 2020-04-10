@@ -1,0 +1,24 @@
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.Core\bin\Debug\netcoreapp3.1\WebSite.Core.deps.json
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.Core\bin\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.Core\bin\Debug\netcoreapp3.1\WebSite.Core.pdb
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.Core\obj\Debug\netcoreapp3.1\WebSite.Core.csprojAssemblyReference.cache
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.Core\obj\Debug\netcoreapp3.1\WebSite.Core.AssemblyInfoInputs.cache
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.Core\obj\Debug\netcoreapp3.1\WebSite.Core.AssemblyInfo.cs
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.Core\obj\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.Core\obj\Debug\netcoreapp3.1\WebSite.Core.pdb
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.Core\bin\Debug\netcoreapp3.1\WebSite.Core.deps.json
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.Core\bin\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.Core\bin\Debug\netcoreapp3.1\WebSite.Core.pdb
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.csprojAssemblyReference.cache
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.AssemblyInfoInputs.cache
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.AssemblyInfo.cs
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.pdb
+C:\Users\Bojan\Desktop\WebSite\WebSite.Core\bin\Debug\netcoreapp3.1\WebSite.Core.deps.json
+C:\Users\Bojan\Desktop\WebSite\WebSite.Core\bin\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\WebSite\WebSite.Core\bin\Debug\netcoreapp3.1\WebSite.Core.pdb
+C:\Users\Bojan\Desktop\WebSite\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.csprojAssemblyReference.cache
+C:\Users\Bojan\Desktop\WebSite\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.AssemblyInfoInputs.cache
+C:\Users\Bojan\Desktop\WebSite\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.AssemblyInfo.cs
+C:\Users\Bojan\Desktop\WebSite\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\WebSite\WebSite.Core\obj\Debug\netcoreapp3.1\WebSite.Core.pdb

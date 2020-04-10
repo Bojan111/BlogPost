@@ -1,0 +1,39 @@
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\bin\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.csprojAssemblyReference.cache
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.AssemblyInfo.cs
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.deps.json
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.runtimeconfig.json
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.runtimeconfig.dev.json
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.dll
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.pdb
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\bin\Debug\netcoreapp3.1\WebSite.Core.pdb
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.csproj.CopyComplete
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.dll
+C:\Users\Bojan\Desktop\Reddnet-master\src\Reddnet.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.pdb
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.dll
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.pdb
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.deps.json
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.runtimeconfig.json
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.runtimeconfig.dev.json
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.dll
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.pdb
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.Core.pdb
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.csprojAssemblyReference.cache
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.AssemblyInfo.cs
+C:\Users\Bojan\Desktop\Asp .Net\WebSite\src\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.csproj.CopyComplete
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.deps.json
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.runtimeconfig.json
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.runtimeconfig.dev.json
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.dll
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.DataAccess.pdb
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.Core.dll
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\bin\Debug\netcoreapp3.1\WebSite.Core.pdb
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.csprojAssemblyReference.cache
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.AssemblyInfo.cs
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.csproj.CopyComplete
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.dll
+C:\Users\Bojan\Desktop\WebSite\WebSite.DataAccess\obj\Debug\netcoreapp3.1\WebSite.DataAccess.pdb

@@ -1,0 +1,30 @@
+﻿@model WebSite.Core.Entities.ReplyEntity
+@using WebSite.Data.Extensions
+@using WebSite.DataAcces.Identity
+
+    <div class="card mb-4" style="width: 18rem;">
+        <img class="card-img-top" src="data:image;base64,@System.Convert.ToBase64String(Model.AuthorEntity.Image)" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">
+                <a class="btn btn-link" style="text-decoration:none;" asp-controller="Account" asp-action="Profile" asp-route-id="@Model.AuthorEntity.Name"><strong style="font-size: 20px">@Model.AuthorEntity.Name</strong></a>
+            </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong class="font-weight-bolder">Comment: </strong>@Html.Raw(Model.RenderContent())</li>
+            <li class="list-group-item">Postdate: @Model.Created.ToString("dd.MM.yyyy · HH:mm")</li>
+        </ul>
+        <div class="card-body">
+            @if (User.Identity.GetAuthorId() == Model.AuthorId)
+            {
+                <a class="btn btn-primary" asp-controller="Comment" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+                <a class="btn btn-primary" asp-controller="Comment" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+            }
+        </div>
+    </div>
+    <div class="row">
+        @*<div class="col mb-2">
+            <img class="img-fluid" style="width: 100%" src="data:image;base64,@System.Convert.ToBase64String(Model.AuthorEntity.Image)" />
+            <a class="btn btn-link" style="text-decoration:none; font-size: 20px"  asp-controller="Account" asp-action="Profile" asp-route-id="@Model.AuthorEntity.Name"><strong>@Model.AuthorEntity.Name</strong></a>
+        </div>*@
+
+    </div>

@@ -1,0 +1,37 @@
+﻿@model WebSite.Core.Entities.AuthorEntity
+
+@{
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="col-8">
+                <img src="data:image;base64,@System.Convert.ToBase64String(Model.Image)" style="width: 100%" />
+
+            </div>
+            <div class="col-8">
+                <h1 class="font-weight-normal text-dark text-center"><strong style="font-size: 28px">@Model.Name</strong></h1>
+
+
+                @if (User.Identity.Name == Model.Name)
+                {
+                    <div class="mb-4">
+                        <a class="btn btn-outline-success" style="width: 100%" asp-controller="Account" asp-action="Settings" asp-route-id="@Model.Name">Settings</a>
+                    </div>
+
+                    <div style="display: flex">
+                        <h3 class="font-weight-normal text-dark" style="font-size: 20px">Posts:@Model.Posts.Count()</h3>
+                        <h3 class="font-weight-normal text-dark" style="font-size: 20px;padding-left: 16px">Comments:@Model.Comments.Count()</h3>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col">
+           
+                @foreach (var item in Model.Posts)
+                {
+                    @await Html.PartialAsync("_PostPartial", item);
+                }
+        </div>
+   </div>
+</div>

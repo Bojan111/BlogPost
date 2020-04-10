@@ -1,0 +1,49 @@
+﻿@model WebSite.Core.Entities.PostEntity
+@using WebSite.DataAcces.Identity
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>
+                    @{ await Html.RenderPartialAsync("_PostDetailsPartial", Model); }
+                </div>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="mb-4">
+                            <form asp-controller="Comment" asp-action="New" asp-route-id="@Model.Id" method="post">
+
+                                <div class="form-group">
+                                    <textarea name="CommentText"></textarea>
+                                </div>
+
+                                <input class="btn btn-danger" type="submit" value="Comment" />
+                            </form>
+                        </div>
+					}
+                <div>
+                    <h2>@Model.Comments.Count() Comments</h2>
+                    @foreach (var ReplyEntity in Model.Comments)
+                    {
+                        @await Html.PartialAsync("_CommentPartial", ReplyEntity);
+                    }
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="container" style="height: 300px;">
+
+                    <h4 class="badge badge-info text-white font-weight-bolder text-center" style="padding: 10px; font-size: 20px"  >Info</h4>
+                    <img class="rounded-circle" style="width:100%" src="~/images/blog-logo-7E0C67F0D1-seeklogo.com.png" />
+
+                    <p class=" text-dark font-weight-bolder text-left">Posts: @Model.Blog.Posts.Count()</p>
+
+                    <hr />
+
+                    <div style="text-align: center">
+                        <a class="btn btn-info" asp-controller="Post" asp-action="New" asp-route-id="@Model.Blog.Id">New Post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

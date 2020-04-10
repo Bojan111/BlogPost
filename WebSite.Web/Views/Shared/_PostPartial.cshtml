@@ -1,0 +1,57 @@
+﻿@model WebSite.Core.Entities.PostEntity
+@using WebSite.DataAcces.Identity
+@using WebSite.Data.Extensions
+<style>
+    img {
+        width: 100%;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div>
+                <div>
+                    @if (string.IsNullOrWhiteSpace(Model.Link))
+                    {
+                        <a asp-controller="Post" asp-action="Details" asp-route-id="@Model.Id">
+                            <img src="data:image;base64,@System.Convert.ToBase64String(Model.Cover)" />
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="@Model.Link">
+                            <img class="card-img-top" style="width: 100%" src="data:image;base64,@System.Convert.ToBase64String(Model.Cover)" />
+                        </a>
+
+
+                    }
+
+                </div>
+                    <div class="text-center">
+                        <div>
+                            <a class="btn btn-link font-weight-bolder" style="text-decoration:none; font-size: 25px" asp-controller="Post" asp-action="Details" asp-route-id="@Model.Id">@Model.Title</a>
+                        </div>
+
+                        <div>
+                            <a class="font-weight-bolder text-dark" style="font-size: 12px" asp-controller="Account" asp-action="Profile" asp-route-id="@Model.AuthorEntity.Name">Posted by @Model.AuthorEntity.Name</a>
+                            <p class="font-weight-bolder text-dark" style="font-size: 12px">Postdate: @Model.Created.ToString("dd.MM.yyyy")</p>
+                        </div>
+                        <div>
+                            <p class="badge badge-dark font-weight-bolder" style="padding: 8px">@Model.Views Views</p>
+                            <p class="badge badge-dark font-weight-bolder" style="padding: 8px">@Model.Comments.Count() Comments</p>
+                        </div>
+                        <div>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @if (User.Identity.GetAuthorId() == Model.AuthorId)
+                                {
+                                    <a class=" btn btn-outline-secondary" asp-controller="Post" asp-action="Edit" asp-route-id="@Model.Id"><i class="fas fa-edit"></i></a>
+                                    <a class=" btn btn-outline-danger" asp-controller="Post" asp-action="Delete" asp-route-id="@Model.Id"><i class="fas fa-trash"></i></a>
+                                }
+                             }
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

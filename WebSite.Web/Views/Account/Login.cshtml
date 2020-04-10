@@ -1,0 +1,27 @@
+﻿@model WebSite.Web.ViewModels.LoginViewModel
+
+@{
+}
+
+<div class="container" style="width: 40%; margin: auto;">
+    <form asp-controller="Account" asp-action="Login">
+        <div class="form-group">
+            <label class="text-secondary" asp-for="UserName"></label>
+            <input asp-for="UserName" />
+        </div>
+
+        <div class="form-group">
+            <label class="text-secondary" asp-for="Password"></label>
+            <input asp-for="Password" />
+        </div>
+
+        <div class="form-group">
+            <label class="text-info" asp-for="RememberMe"></label>
+            <input asp-for="RememberMe" value="true" />
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Login" />
+
+        <div class="errors" asp-validation-summary="All"></div>
+    </form>
+</div>

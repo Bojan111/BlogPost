@@ -1,0 +1,46 @@
+﻿@model WebSite.Web.ViewModels.PostViewModel
+@using WebSite.DataAcces.Identity
+@{
+}
+
+        <div class="container">
+            <form asp-controller="Post" asp-action="New" method="post" enctype="multipart/form-data">
+                <div class="row container">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Attach File</label>
+
+                            <label for="imageInput">
+                                <img id="imageDisplay" src="~/images/img_550711.png" alt="Attach File" height="200" width="200" />
+                                <input id="imageInput" type="file" name="formFile" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-group">
+                        <label  asp-for="Link"></label>
+                        <input asp-for="Link">
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="form-group">
+                        <label asp-for="Text">Text</label>
+                        <textarea asp-for="Text"></textarea>
+                    </div>
+                    <div class="text-center">
+                         <input class="btn btn-success" type="submit" value="Upload" />
+                    </div>
+                    <div class="errors" asp-validation-summary="All"></div>
+                </div>
+            </form>
+
+        </div>
